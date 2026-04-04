@@ -1,5 +1,7 @@
 from enum import Enum
 
+from htmlnode import LeafNode
+
 
 class Bender(Enum):
     AIR_BENDER = "air"
@@ -10,6 +12,11 @@ class Bender(Enum):
 
 class TextType(Enum):
     BOLD = "bold"
+    TEXT = "text"
+    ITALIC = "italic"
+    CODE = "code"
+    LINK = "link"
+    IMAGE = "image"
 
 
 class TextNode:
